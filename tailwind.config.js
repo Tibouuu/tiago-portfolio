@@ -7,6 +7,7 @@ export default {
   theme: {
       fontFamily: {
           'sans': ['Raleway', 'Arial', 'sans-serif'],
+          'mono': ['Menlo'],
       },
     extend: {},
   },
