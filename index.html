@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Tiago Carpinteiro - Portfolio</title>
+  <link href="./src/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans font-black">
+
+<header class="p-20 flex justify-between items-center relative">
+  <p class="text-3xl"><strong class="text-[#E83F40]">[</strong>Tiago Carpinteiro.<strong class="text-[#E83F40]">]</strong></p>
+  <nav id="mySidenav" class="sidenav flex z-5 w-screen h-screen bg-[#E83F40] transition-all flex-col items-center justify-center top-[-100vh] left-0 absolute">
+    <a id="closeBtn" href="#" onclick=closeNav() class="text-4xl text-white absolute right-10 top-10">x</a>
+    <a class="text-2xl text-white">Projets</a>
+    <a class="text-2xl text-white">Compétences</a>
+    <a class="text-2xl text-white">Contact</a>
+  </nav>
+  <a href="#" id="openBtn block" onclick=openNav()>
+                <span class="burger-icon inline-block">
+                    <div class="bg-[#6D0000] w-[35px] h-[5px] mb-1"></div>
+                    <div class="bg-[#6D0000] w-[35px] h-[5px] mb-1"></div>
+                    <div class="bg-[#6D0000] w-[35px] h-[5px]"></div>
+                </span>
+  </a>
+</header>
+
+<section class="w-[75%] ml-auto mr-auto mb-[160px] flex items-center">
+  <img src="./public/tiago.png" class="tiago relative z-[-1] w-[350px] h-[350px] rounded-[15px]"/>
+  <div>
+    <h2 class="text-[#E83F40] text-6xl text-center">Hello !!</h2>
+    <p class="font-normal text-justify mx-10">Je m'appelle Tiago Carpinteiro, je suis étudiant en métiers du multimédia et de l'internet à l'IUT de Lens. Passionné par le web et le design, c'est tout naturellement que je me tourne vers l'UX/UI pour mon choix de carrière. J'adore apprendre de nouvelles choses et toujours me rendre utiles.
+        Créatif et curieux, ma devise est de rendre l'impossible, possible.</p>
+  </div>
+</section>
+
+<section class="overflow-hidden">
+
+</section>
+</body>
+<script>
+  var sidenav = document.getElementById("mySidenav");
+  var openBtn = document.getElementById("openBtn");
+  var closeBtn = document.getElementById("closeBtn");
+
+  openBtn.onclick = openNav;
+  closeBtn.onclick = closeNav;
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    sidenav.classList.add("active");
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    sidenav.classList.remove("active");
+  }
+</script>
+</html>

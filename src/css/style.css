@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    display: flex;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+}
+
+.tiago::after{
+    content: "";
+    width: 350px;
+    height: 350px;
+    border: 2px solid #E83F40;
+    border-radius: 15px;
+    position: absolute;
+    left:20px;
+    top: 20px;
+}
