@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="utf-8">
   <title>Tiago Carpinteiro - Portfolio</title>
   <link href="./src/css/style.css" rel="stylesheet">
 </head>
 <body class="bg-white font-sans font-black">
-
+<img class="absolute top-0 left-0 z-[-1]" src="public/grille.svg">
 <header class="p-20 flex justify-between items-center relative">
   <p class="text-3xl"><strong class="text-[#E83F40]">[</strong>Tiago Carpinteiro.<strong class="text-[#E83F40]">]</strong></p>
-  <nav id="mySidenav" class="sidenav flex z-5 w-screen h-screen bg-[#E83F40] transition-all flex-col items-center justify-center top-[-100vh] left-0 absolute">
+  <nav id="mySidenav" class="sidenav overflow-hidden text-center flex z-20 w-screen h-screen bg-[#E83F40] transition-all flex-col items-center justify-center top-[-100vh] left-0 fixed">
     <a id="closeBtn" href="#" onclick=closeNav() class="text-4xl text-white absolute right-10 top-10">x</a>
-    <a class="text-2xl text-white">Projets</a>
-    <a class="text-2xl text-white">Compétences</a>
-    <a class="text-2xl text-white">Contact</a>
+    <a class="text-6xl whitespace-nowrap m-6 text-white">· PROJETS · PROJETS · PROJETS · PROJETS · PROJETS ·</a>
+    <a class="text-6xl whitespace-nowrap m-6 text-white">· GALERIE PHOTO · GALERIE PHOTO · GALERIE PHOTO · GALERIE PHOTO ·</a>
+    <a class="text-6xl whitespace-nowrap m-6 text-white">· CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT</a>
+    <div class="flex items-center absolute bottom-[20px] justify-between w-[90%] mt-[200px]">
+        <div class="text-left font-normal text-white w-full pl-3">
+            <p>Tiago Carpinteiro</p>
+            <p>07 85 61 87 79</p>
+            <p>Paris - Lens - Lille</p>
+        </div>
+        <div class="flex"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="ico / 24 / social media &#38; tools / gmail">
+                <path id="Icon color" fill-rule="evenodd" clip-rule="evenodd" d="M33.3333 6.66669C35.1742 6.66669 36.6666 8.15907 36.6666 10V30C36.6666 31.841 35.1742 33.3334 33.3333 33.3334H6.66659C4.82564 33.3334 3.33325 31.841 3.33325 30V10C3.33325 8.15907 4.82564 6.66669 6.66659 6.66669H33.3333ZM30.8333 30H32.4999C32.9602 30 33.3333 29.6269 33.3333 29.1667V10.8334C33.3333 10.3731 32.9602 10 32.4999 10H30.1999C29.824 10.0022 29.4598 10.1314 29.1666 10.3667L19.7666 17.8667L10.3833 10.3667C10.09 10.1314 9.72586 10.0022 9.34992 10H7.49992C7.03968 10 6.66659 10.3731 6.66659 10.8334V29.1667C6.66659 29.6269 7.03968 30 7.49992 30H9.16659C9.62682 30 9.99992 29.6269 9.99992 29.1667V14.3167L18.9166 21.4C19.1433 21.5687 19.4173 21.662 19.6999 21.6667H19.9999C20.2537 21.6456 20.4964 21.5532 20.6999 21.4L29.9999 13.95V29.1667C29.9999 29.6269 30.373 30 30.8333 30Z" fill="#FBFBFB"/>
+            </g>
+        </svg>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="ico / 24 / social media &#38; tools / linkedin">
+                    <path id="Icon color" fill-rule="evenodd" clip-rule="evenodd" d="M5.83325 8.33333C5.83325 6.49238 7.32564 5 9.16659 5C10.0506 5 10.8985 5.35119 11.5236 5.97631C12.1487 6.60143 12.4999 7.44928 12.4999 8.33333C12.4999 10.1743 11.0075 11.6667 9.16659 11.6667C7.32564 11.6667 5.83325 10.1743 5.83325 8.33333ZM34.9999 22.35C35.0574 18.7415 32.5956 15.5794 29.0833 14.75C26.7295 14.2432 24.276 14.9078 22.4999 16.5333V15.8333C22.4999 15.3731 22.1268 15 21.6666 15H17.4999C17.0397 15 16.6666 15.3731 16.6666 15.8333V32.5C16.6666 32.9602 17.0397 33.3333 17.4999 33.3333H21.6666C22.1268 33.3333 22.4999 32.9602 22.4999 32.5V23.1C22.4588 21.4262 23.6253 19.9645 25.2666 19.6333C26.2438 19.4646 27.2455 19.7398 27.9993 20.3842C28.7532 21.0285 29.181 21.9751 29.1666 22.9667V32.5C29.1666 32.9602 29.5397 33.3333 29.9999 33.3333H34.1666C34.6268 33.3333 34.9999 32.9602 34.9999 32.5V22.35ZM12.4999 15.8333V32.5C12.4999 32.9602 12.1268 33.3333 11.6666 33.3333H7.49992C7.03968 33.3333 6.66659 32.9602 6.66659 32.5V15.8333C6.66659 15.3731 7.03968 15 7.49992 15H11.6666C12.1268 15 12.4999 15.3731 12.4999 15.8333Z" fill="#FBFBFB"/>
+                </g>
+            </svg>
+        </div>
+    </div>
   </nav>
   <a href="#" id="openBtn block" onclick=openNav()>
                 <span class="burger-icon inline-block">
@@ -24,16 +43,68 @@
 </header>
 
 <section class="w-[75%] ml-auto mr-auto mb-[160px] flex items-center">
-  <img src="./public/tiago.png" class="tiago relative z-[-1] w-[350px] h-[350px] rounded-[15px]"/>
-  <div>
+  <img src="./public/tiago.png" class="tiago relative basis-1/3 w-[350px] h-[350px] object-cover rounded-[15px]"/>
+  <div class="basis-2/3">
     <h2 class="text-[#E83F40] text-6xl text-center">Hello !!</h2>
     <p class="font-normal text-justify mx-10">Je m'appelle Tiago Carpinteiro, je suis étudiant en métiers du multimédia et de l'internet à l'IUT de Lens. Passionné par le web et le design, c'est tout naturellement que je me tourne vers l'UX/UI pour mon choix de carrière. J'adore apprendre de nouvelles choses et toujours me rendre utiles.
         Créatif et curieux, ma devise est de rendre l'impossible, possible.</p>
   </div>
 </section>
 
-<section class="overflow-hidden">
+<section class="overflow-hidden mb-[160px]">
+    <h1 class="uppercase text-6xl whitespace-nowrap text-[#E83F40]">jets · projets · projets · projets · projets · projets</h1>
+    <div class="w-[80%] ml-auto mr-auto justify-center flex grid grid-cols-3 gap-8 place-content-center">
+        <div class="bg-[#6D0000] text-opacity-0">
+            <img class="hover:opacity-0  rounded-[15px]" src="public/Missions.svg">
+            <p class="hidden">EN HOVER</p>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/tv-lens.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+        <div class="boite">
+            <img class="rounded-[15px]" src="public/cv.svg">
+            <i class="hidden">EN HOVER</i>
+        </div>
+    </div>
+</section>
 
+<section class="overflow-hidden text-center">
+    <h1 class="text-[#E83F40] text-6xl text-center whitespace-nowrap">PÉTENCES · COMPÉTENCES · COMPÉTENCES · COMPÉTENCES ·</h1>
+    <div class="flex justify-center pt-10 w-full">
+        <img class="w-[150px] h-[150px] m-3" src="public/figma.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/illustrator.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/premiere.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/after.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/photoshop.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/lightroom.png">
+        <img class="w-[150px] h-[150px] m-3" src="public/indesign.png">
+
+    </div>
 </section>
 </body>
 <script>

@@ -8,13 +8,18 @@
     transition: top 0.5s ease-in-out;
 }
 
+.tiago{
+    position: relative;
+}
+
 .tiago::after{
     content: "";
-    width: 350px;
+    width: 120%;
+    background-color: white;
     height: 350px;
     border: 2px solid #E83F40;
     border-radius: 15px;
     position: absolute;
-    left:20px;
+    left: 20px;
     top: 20px;
 }
